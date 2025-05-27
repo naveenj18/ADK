@@ -31,3 +31,30 @@ hsn_validator_agent/
 ```bash
 git clone https://github.com/your-username/hsn_validator_agent.git
 cd hsn_validator_agent
+
+##. Create and activate a virtual environment
+python -m venv env
+source env/bin/activate 
+
+
+##Get an API key from Google AI Studio.
+When using Python, open the .env file located inside (multi_tool_agent/) and copy-paste the following code.
+
+multi_tool_agent/.env
+
+GOOGLE_GENAI_USE_VERTEXAI=FALSE
+GOOGLE_API_KEY=PASTE_YOUR_ACTUAL_API_KEY_HERE
+###When using Java, define environment variables:
+
+terminal
+
+export GOOGLE_GENAI_USE_VERTEXAI=FALSE
+export GOOGLE_API_KEY=PASTE_YOUR_ACTUAL_API_KEY_HERE
+
+#Run the following command to launch the dev UI.
+
+
+adk web
+Step 1: Open the URL provided (usually http://localhost:8000 or http://127.0.0.1:8000) directly in your browser.
+
+Step 2. In the top-left corner of the UI, you can select your agent in the dropdown. Select "multi_tool_agent".
